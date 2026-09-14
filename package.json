@@ -1,0 +1,11 @@
+{
+  "name": "ashutosh-joge-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ashutosh Joge's modular HTML, CSS and JavaScript portfolio",
+  "scripts": {
+    "start": "node server.cjs",
+    "dev": "node server.cjs"
+  },
+  "engines": { "node": ">=18" }
+}

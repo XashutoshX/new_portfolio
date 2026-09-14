@@ -1,0 +1,14 @@
+.pivot{ display:grid; gap:44px; }
+@media (min-width:800px){ .pivot{ grid-template-columns:0.8fr 1.2fr; } }
+.pivot-figure{
+  aspect-ratio:4/5;
+  background:var(--paper-raise);
+  border:1px solid var(--line);
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-mono); font-size:13px; color:var(--steel);
+  text-align:center; padding:20px;
+  overflow:hidden;
+}
+.pivot-figure img{ width:100%; height:100%; object-fit:contain; }
+.pivot-body p{ margin-bottom:16px; color:var(--ink-soft); font-size:16.5px; }
+.pivot-body p strong{ color:var(--ink); font-weight:600; }

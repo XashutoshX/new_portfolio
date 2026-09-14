@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="600" viewBox="0 0 480 600">
+  <rect width="480" height="600" fill="#E4DFD2"/>
+  <rect x="28" y="28" width="424" height="544" fill="none" stroke="#A9791F"/>
+  <path d="M60 100H420M60 500H420" stroke="#1C2127" stroke-opacity=".14"/>
+  <text x="240" y="335" text-anchor="middle" font-family="Georgia,serif" font-size="160" fill="#1C2127">AJ</text>
+  <text x="240" y="400" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" letter-spacing="4" fill="#454E58">ASHUTOSH JOGE</text>
+  <text x="240" y="535" text-anchor="middle" font-family="monospace" font-size="12" letter-spacing="1" fill="#5C6B73">PRODUCT &amp; AI STRATEGY</text>
+</svg>

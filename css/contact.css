@@ -1,0 +1,10 @@
+.close{ background:var(--ink); color:var(--paper); border-bottom:none; }
+.close .section-head p{ color:rgba(239,235,225,0.68); }
+.close .tag::after{ background:var(--line-light); }
+.close .tag{ color:rgba(239,235,225,0.55); }
+.close .tag .num{ color:var(--rust-soft); }
+.close-cta{ display:flex; flex-wrap:wrap; gap:14px; margin-top:8px; }
+.close .btn-primary{ background:var(--rust); border-color:var(--rust); color:var(--paper); }
+.close .btn-primary:hover{ background:var(--rust-soft); border-color:var(--rust-soft); }
+.close .btn-ghost{ border-color:rgba(239,235,225,0.4); }
+.close .btn-ghost:hover{ background:var(--paper); color:var(--ink); }

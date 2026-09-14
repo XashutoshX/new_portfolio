@@ -1,0 +1,23 @@
+/* ============================================
+   DESIGN TOKENS
+   Change these and the whole site restyles.
+   Nothing else should hardcode a color or font.
+   ============================================ */
+:root{
+  --ink:         #1C2127;   /* primary text / dark sections */
+  --ink-soft:    #454E58;   /* secondary text on light */
+  --paper:       #EFEBE1;   /* warm paper background */
+  --paper-raise: #E4DFD2;   /* slightly darker paper, for cards/panels */
+  --rust:        #A9791F;   /* accent — gold, use sparingly */
+  --rust-soft:   #C9A74B;
+  --steel:       #5C6B73;   /* muted secondary accent, rules & meta */
+  --line:        rgba(28,33,39,0.14);
+  --line-light:  rgba(239,235,225,0.22);
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body:    'Manrope', -apple-system, sans-serif;
+  --font-mono:    'Space Mono', monospace;
+
+  --max: 920px;
+  --pad: clamp(24px, 6vw, 64px);
+}

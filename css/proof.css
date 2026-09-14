@@ -1,0 +1,5 @@
+.quotes{ display:grid; gap:24px; }
+@media (min-width:720px){ .quotes{ grid-template-columns:1fr 1fr; } }
+.quote{ border-left:2px solid var(--rust); padding-left:20px; }
+.quote p{ font-family:var(--font-display); font-size:18px; line-height:1.5; font-weight:500; }
+.quote footer{ margin-top:14px; font-size:13.5px; color:var(--steel); }

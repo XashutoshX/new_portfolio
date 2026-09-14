@@ -1,0 +1,13 @@
+.timeline{ position:relative; padding-left:28px; }
+.timeline::before{ content:""; position:absolute; left:4px; top:6px; bottom:6px; width:1px; background:var(--line); }
+.trole{ position:relative; padding-bottom:36px; }
+.trole:last-child{ padding-bottom:0; }
+.trole::before{
+  content:""; position:absolute; left:-28px; top:5px;
+  width:9px; height:9px; border-radius:50%;
+  background:var(--rust);
+}
+.trole .when{ font-family:var(--font-mono); font-size:12px; color:var(--steel); margin-bottom:6px; display:block; }
+.trole h3{ font-size:19px; margin-bottom:6px; }
+.trole .translate{ margin-top:8px; font-size:14.5px; color:var(--ink-soft); padding-left:14px; border-left:2px solid var(--paper-raise); }
+.trole .translate strong{ color:var(--rust); font-weight:600; }

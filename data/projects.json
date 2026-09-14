@@ -1,0 +1,48 @@
+[
+  {
+    "title": "GenAI Conversational Support & IVR Modernization",
+    "industry": "Telecom · Accenture",
+    "situation": "Legacy chatbot and IVR stack had low containment, pushing costly volume into human escalation.",
+    "approach": "Designed and deployed a GenAI-driven Dialogflow CX playbook, built a RAG-based retrieval architecture to ground responses in FAQs, and built an automated testing framework to de-risk releases.",
+    "outcome": "Chat containment improved from 30% to 45%. The IVR launch hit 53% containment, the highest on record, with zero escalations at release.",
+    "metrics": [
+      { "value": "53%", "label": "IVR containment" },
+      { "value": "75%", "label": "less manual testing" },
+      { "value": "0", "label": "escalations at launch" }
+    ]
+  },
+  {
+    "title": "Transformation as a Service — Value Realization Office",
+    "industry": "Enterprise Transformation · Accenture",
+    "situation": "Leadership across three business verticals had no consistent way to see whether transformation initiatives were actually paying off.",
+    "approach": "Designed KPI dashboards in partnership with senior stakeholders, aligning product metrics to business goals, and acted as the bridge between engineering and business sponsors on requirements and adoption tracking.",
+    "outcome": "The dashboards became the standard decision-making tool across all three verticals, replacing most manual reporting and supporting a transformation that delivered measurable business value.",
+    "metrics": [
+      { "value": "£8M", "label": "business value, FY24–25" },
+      { "value": "90%", "label": "less manual reporting" },
+      { "value": "3", "label": "verticals standardized" }
+    ]
+  },
+  {
+    "title": "SMB Identification & Segmentation",
+    "industry": "Growth Strategy · Accenture",
+    "situation": "Sales and marketing had no reliable way to prioritize which SMB accounts to target, spreading campaign spend thin.",
+    "approach": "Built clustering-based customer personas from behavioral and demographic data in partnership with sales and marketing, then built a prioritization model to rank high-potential segments.",
+    "outcome": "Targeted campaigns built on the new segmentation model drove a measurable lift in SMB sales.",
+    "metrics": [
+      { "value": "20%", "label": "increase in SMB sales" }
+    ]
+  },
+  {
+    "title": "High-Speed Internet Lead Generation",
+    "industry": "Telecom Growth · Accenture",
+    "situation": "Acquisition spend on high-speed internet leads was inefficient, with targeting too broad to hit cost or conversion goals.",
+    "approach": "Spearheaded a machine-learning lead-scoring system, scoping requirements around a fixed acquisition-cost ceiling before optimizing the model, and partnered with engineering to integrate it into the acquisition workflow.",
+    "outcome": "Targeting efficiency improved and acquisition costs dropped, while lead conversion rose — proving the model paid for itself rather than just improving on paper.",
+    "metrics": [
+      { "value": "30%", "label": "better targeting efficiency" },
+      { "value": "15%", "label": "lower acquisition cost" },
+      { "value": "11%", "label": "higher lead conversion" }
+    ]
+  }
+]
