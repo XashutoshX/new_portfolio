@@ -4,20 +4,28 @@
    Nothing else should hardcode a color or font.
    ============================================ */
 :root{
-  --ink:         #1C2127;   /* primary text / dark sections */
-  --ink-soft:    #454E58;   /* secondary text on light */
-  --paper:       #EFEBE1;   /* warm paper background */
-  --paper-raise: #E4DFD2;   /* slightly darker paper, for cards/panels */
-  --rust:        #A9791F;   /* accent — gold, use sparingly */
-  --rust-soft:   #C9A74B;
-  --steel:       #5C6B73;   /* muted secondary accent, rules & meta */
-  --line:        rgba(28,33,39,0.14);
-  --line-light:  rgba(239,235,225,0.22);
+  --ink:         #18212B;
+  --ink-soft:    #53616D;
+  --paper:       #E9F0F7;
+  --paper-raise: rgba(255,255,255,.48);
+  --paper-deep:  #CBD8E5;
+  --rust:        #C76643;
+  --rust-soft:   #E6956D;
+  --steel:       #5D7081;
+  --line:        rgba(56,78,98,0.18);
+  --line-light:  rgba(255,255,255,0.32);
+  --glass:       rgba(255,255,255,.42);
+  --glass-strong:rgba(255,255,255,.62);
+  --glass-dark:  rgba(18,33,48,.72);
+  --glass-border:rgba(255,255,255,.68);
+  --shadow-sm:   0 12px 34px rgba(57,83,108,0.13);
+  --shadow-lg:   0 26px 80px rgba(57,83,108,0.2);
+  --ease:        cubic-bezier(.22,1,.36,1);
 
   --font-display: 'Fraunces', Georgia, serif;
   --font-body:    'Manrope', -apple-system, sans-serif;
   --font-mono:    'Space Mono', monospace;
 
-  --max: 920px;
-  --pad: clamp(24px, 6vw, 64px);
+  --max: 1080px;
+  --pad: clamp(20px, 5vw, 72px);
 }

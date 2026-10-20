@@ -28,6 +28,7 @@ async function loadSections() {
   // Wait for the content as well as its containers before restoring deep links.
   await loadData();
   openExternalLinksInNewTabs();
+  setupRevealAndActiveNav();
   document.dispatchEvent(new Event("portfolio:ready"));
   let targetId = location.hash.slice(1);
   try { targetId = decodeURIComponent(targetId); } catch { /* Ignore malformed fragment encoding. */ }
@@ -40,6 +41,36 @@ function openExternalLinksInNewTabs() {
     link.target = "_blank";
     link.rel = "noopener noreferrer";
   });
+}
+
+function setupRevealAndActiveNav() {
+  const sections = [...document.querySelectorAll('main section[id]')];
+  const links = [...document.querySelectorAll('.nav-links a')];
+  sections.forEach((section) => {
+    section.classList.add('reveal');
+    section.querySelectorAll('.case, .principle, .quote, .model, .trole').forEach((item) => item.classList.add('reveal'));
+  });
+
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
+
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        links.forEach((link) => link.classList.toggle('is-active', link.getAttribute('href') === `#${entry.target.id}`));
+      });
+    }, { rootMargin: '-35% 0px -55% 0px' });
+    sections.forEach((section) => navObserver.observe(section));
+  } else {
+    document.querySelectorAll('.reveal').forEach((element) => element.classList.add('is-visible'));
+  }
 }
 
 const menuButton = document.querySelector(".nav-toggle");
