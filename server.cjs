@@ -2,7 +2,7 @@ const http = require("node:http");
 const fs = require("node:fs/promises");
 const path = require("node:path");
 
-const root = __dirname;
+const root = path.join(__dirname, "public");
 const port = Number(process.env.PORT || 8000);
 const types = {
   ".html": "text/html; charset=utf-8",

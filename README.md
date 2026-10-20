@@ -27,25 +27,25 @@ Use the local server instead of double-clicking `index.html`: browsers restrict 
 
 | Location | Purpose |
 | --- | --- |
-| `index.html` | Navigation, section mount points and footer |
-| `sections/` | Hero, pivot, thinking, work, record, proof, models and contact |
-| `css/` | Shared tokens and base styles, plus one stylesheet per section |
-| `data/projects.json` | Case studies and their metrics |
-| `data/experience.json` | Work and education timeline |
-| `data/testimonials.json` | Quotes and attribution |
-| `assets/` | Images and résumé |
-| `js/main.js` | Section assembly, mobile menu and initial anchor navigation |
-| `js/data.js` | Independent JSON loading and text-safe rendering |
+| `public/index.html` | Navigation, section mount points and footer |
+| `public/sections/` | Hero, pivot, thinking, work, record, proof, models and contact |
+| `public/css/` | Shared tokens and base styles, plus one stylesheet per section |
+| `public/data/projects.json` | Case studies and their metrics |
+| `public/data/experience.json` | Work and education timeline |
+| `public/data/testimonials.json` | Quotes and attribution |
+| `public/assets/` | Images and résumé |
+| `public/js/main.js` | Section assembly, mobile menu and initial anchor navigation |
+| `public/js/data.js` | Independent JSON loading and text-safe rendering |
 | `server.cjs` | Dependency-free local preview server |
 
-Change `css/tokens.css` to update the colors, fonts or page width. To add a section, add its HTML file, mount point in `index.html`, and entry in `js/main.js`; link its stylesheet from `index.html` if needed.
+Change `public/css/tokens.css` to update the colors, fonts or page width. To add a section, add its HTML file, mount point in `public/index.html`, and entry in `public/js/main.js`; link its stylesheet from `public/index.html` if needed.
 
 ## Profile photo and résumé
 
 The portfolio uses the supplied assets:
 
-- `assets/picofme (3).png` — the yellow-background profile photo in `sections/pivot.html`, displayed without cropping. The alternate `picofme (2).png` remains available in assets.
-- `assets/Ashutosh_Joge.pdf` — linked by the Download résumé (PDF) button in `sections/hero.html`.
+- `public/assets/picofme (3).png` — the yellow-background profile photo in `public/sections/pivot.html`, displayed without cropping. The alternate `picofme (2).png` remains available in assets.
+- `public/assets/Ashutosh_Joge.pdf` — linked by the Download résumé (PDF) button in `public/sections/hero.html`.
 
 Replace these files to update the assets, or change the corresponding HTML paths if you use different filenames. The AJ monogram remains the favicon.
 
@@ -53,4 +53,4 @@ Google Fonts are optional external resources; system fallback fonts keep the por
 
 ## Hosting
 
-The site can be served by any static host. Publish `index.html` and the `css`, `js`, `sections`, `data` and `assets` folders together, preserving their paths. The Node preview server and `package.json` are not needed for static hosting.
+The site can be served by any static host. Publish the contents of `public/` together, preserving the `css`, `js`, `sections`, `data` and `assets` paths. The Node preview server and `package.json` are not needed for static hosting.
